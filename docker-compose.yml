@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  proto-dev:
+   container_name: proto_dev_env
+   build: .
+   tty: true
+   volumes:
+     - .:/go/src/samplepb

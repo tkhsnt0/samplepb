@@ -1,0 +1,12 @@
+// ライセンスヘッダ:バージョン3を利用
+syntax = "proto3"; 
+// 生成コードの格納先パッケージを指定
+option go_package = "/pkg/grpc";
+// パッケージの宣言
+package protobuf;
+
+// エラー型の定義
+message Error{
+    string type     = 1;    //  エラー種別
+    string message  = 2;    //  エラーメッセージ
+}

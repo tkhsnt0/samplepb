@@ -1,0 +1,21 @@
+{
+    "name": "protocol-buffer devlopment",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "proto_dev_env",
+    "workspaceFolder": "/go/src/samplepb",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go",
+                "ms-azuretools.vscode-docker"                
+            ],
+            "settings": {
+                "go.gopath": "/go",
+                "go.inferGopath": true,
+                "go.useLanguageServer": true
+            }
+        }
+    }
+}

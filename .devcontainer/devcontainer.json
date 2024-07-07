@@ -3,7 +3,7 @@
     "dockerComposeFile": [
         "../docker-compose.yml"
     ],
-    "service": "proto_dev_env",
+    "service": "proto-dev",
     "workspaceFolder": "/go/src/samplepb",
     "customizations": {
         "vscode": {
@@ -14,7 +14,12 @@
             "settings": {
                 "go.gopath": "/go",
                 "go.inferGopath": true,
-                "go.useLanguageServer": true
+                "go.useLanguageServer": true,
+                "go.formatTool":"gofmt",
+                "editor.formatOnSave": true,
+                "[go]": {
+                    "editor.formatOnSave": true
+                }
             }
         }
     }
